@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time4Test - Account Deletion</title>
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --card-bg: #ffffff;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --border: #e5e7eb;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #111827;
+                --card-bg: #1f2937;
+                --text-main: #f9fafb;
+                --text-muted: #9ca3af;
+                --primary: #3b82f6;
+                --primary-hover: #60a5fa;
+                --border: #374151;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            max-width: 600px;
+            width: 90%;
+            padding: 40px;
+            margin: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        .method {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .method h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .method-icon {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        ol {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .footer {
+            margin-top: 32px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-placeholder">T4T</div>
+        <h1>Account Data Deletion Request</h1>
+        <p>At Time4Test, we respect your privacy. If you wish to delete your account and all associated data, you can do so by following the instructions below.</p>
+
+        <div class="method">
+            <h2><span class="method-icon">📱</span> Method 1: Delete via the App (Fastest)</h2>
+            <ol>
+                <li>Open the <strong>Time4Test</strong> app.</li>
+                <li>Go to the <strong>Profile</strong> tab in the bottom navigation.</li>
+                <li>Scroll down and tap on <strong>Delete Account</strong>.</li>
+                <li>Confirm your decision. All your data will be permanently wiped immediately.</li>
+            </ol>
+        </div>
+
+        <div class="method">
+            <h2><span class="method-icon">✉️</span> Method 2: Request Deletion via Email</h2>
+            <p style="margin-bottom: 16px;">If you no longer have access to the app or your device, you can request manual data deletion. Please send an email from the address associated with your account.</p>
+            
+            <!-- IMPORTANT: User will send email to this address -->
+            <a href="mailto:bma.point@gmail.com?subject=Account Deletion Request&body=Hello,%0D%0A%0D%0AI would like to request the deletion of my Time4Test account and all associated data.%0D%0A%0D%0ARegistered Email: [Enter your email here]%0D%0A%0D%0AThank you." class="contact-btn">
+                Request Deletion via Email
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 Time4Test. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
